@@ -25,7 +25,7 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Build GApps inline
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -45,6 +45,6 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus6
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus6 \
     PRODUCT_NAME=OnePlus6 \
-    PRIVATE_BUILD_DESC="OnePlus6-user 8.1.0 OPM1.171019.011 273 release-keys"
+    PRIVATE_BUILD_DESC="OnePlus6-user 9 PKQ1.180716.001 1812250000 release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:8.1.0/OPM1.171019.011/06140300:user/release-keys
+BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:9/PKQ1.180716.001/1812250000:user/release-keys

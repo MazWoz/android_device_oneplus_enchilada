@@ -28,9 +28,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -41,6 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
+$(call inherit-product, device/oneplus/extras/common.mk)
 
 # Inherit from vendor blobs
 #$(call inherit-product, vendor/oneplus/enchilada/enchilada-vendor.mk)

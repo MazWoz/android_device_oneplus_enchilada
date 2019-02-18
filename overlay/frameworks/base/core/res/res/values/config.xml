@@ -383,4 +383,11 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">80px</dimen>
     <dimen name="status_bar_height_landscape">80px</dimen>
+
+
+    <!-- Internal default to navigation bar value -->
+    <bool name="config_defaultToNavigationBar">false</bool>
+
+    <!-- Button brightness -->
+    <bool name="config_button_brightness_support">true</bool>
 </resources>

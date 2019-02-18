@@ -25,11 +25,11 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Build GApps inline
-#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product-if-exists, vendor/abgapps/ab-gapps.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Chandra"
+DEVICE_MAINTAINERS="mazwoz"
 
 PRODUCT_NAME := du_enchilada
 PRODUCT_DEVICE := enchilada
